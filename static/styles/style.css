@@ -1,0 +1,87 @@
+/* General reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+/* Lock the scrolling of the entire page */
+body {
+    overflow: hidden;
+}
+
+/* Parent container for the entire layout */
+#app-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* First div - Pie chart and Statistics Header */
+#header {
+    width: 240px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    flex-shrink: 0;
+}
+
+#chart-container {
+    width: 300px;
+    height: 300px; /* Increased size */
+}
+
+/* Second div - Tab buttons (toolbar) */
+#toolbar {
+    width: 80px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    padding-top: 20px; 
+    border-right: 1px solid #ddd; 
+    flex-shrink: 0;
+}
+
+.tab {
+    padding: 14px 20px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; 
+    font-size: 16px;
+    text-align: center;
+    width: 100%; 
+}
+
+.tab:hover {
+    background-color: #f0f0f0;
+}
+
+.active-tab {
+    background-color: #e0e0e0;
+}
+
+/* Third div - Tweets section (scrollable) */
+#scroller {
+    flex: 1; 
+    overflow-y: auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Styling for tweet containers */
+.tweet-container {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
