@@ -2,17 +2,17 @@
 A Twitter sentiment analysis tool, that scrapes and analyses tweets from the search tab of a certain topic.
 
 ### Arguments
--e, --email | Twitter email address | REQUIRED
--u, --username | Twitter username | REQUIRED
--p, --password | Twitter password | REQUIRED
--t, --topic | Topic to search for | REQUIRED
--n, --tweets_num | Number of tweets to scrape | DEFAULT = 100
--m, --sentiment_model | Pick sentiment model ("vader" or "roberta") |  DEFAULT = "vader"
--x, --csv_name | CSV output file name | DEFAULT = "output"
--r, --show_browser | Show browser window | FLAG
--c, --custom_csv | Analyze custom csv | DEFAULT = ""
--s, --save_without_html | Scrape and analyze the tweets without HTML escape tags (This won't launch the interface) | FLAG
--l, --port_number | Host on entered port | DEFAULT = 5000
+-e, --email | Twitter email address | REQUIRED<br>
+-u, --username | Twitter username | REQUIRED<br>
+-p, --password | Twitter password | REQUIRED<br>
+-t, --topic | Topic to search for | REQUIRED<br>
+-n, --tweets_num | Number of tweets to scrape | DEFAULT = 100<br>
+-m, --sentiment_model | Pick sentiment model ("vader" or "roberta") |  DEFAULT = "vader"<br>
+-x, --csv_name | CSV output file name | DEFAULT = "output"<br>
+-r, --show_browser | Show browser window | FLAG<br>
+-c, --custom_csv | Analyze custom csv | DEFAULT = ""<br>
+-s, --save_without_html | Scrape and analyze the tweets without HTML escape tags (This won't launch the interface) | FLAG<br>
+-l, --port_number | Host on entered port | DEFAULT = 5000<br>
 
 #### Example
 This example collects and analyses the top 500 tweets about the stock market.
